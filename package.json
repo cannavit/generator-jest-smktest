@@ -1,0 +1,27 @@
+{
+  "name": "generator-jest-smktest",
+  "version": "0.0.0",
+  "description": "Smoketest suites gerentator in jest format",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "smoketest",
+    "smoke",
+    "test",
+    "smktest",
+    "jest",
+    "automation",
+    "suites",
+    "apis",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Cannavit",
+  "license": "MIT"
+}
