@@ -2,6 +2,8 @@ import arg from 'arg';
 import inquirer from 'inquirer';
 import { createProject, solveTasks } from './main';
 import figlet from 'figlet';
+
+import { generateCasesSwagger } from './services/smktestSwagger';
 // https://www.twilio.com/blog/how-to-build-a-cli-with-node-js
 
 function parseArgumentsIntoOptions(rawArgs) {
@@ -219,6 +221,7 @@ async function promptForScannerAPI(options) {
 
 export async function cli(args) {
   //! Presentation text:
+
   console.log(
     figlet.textSync('smkTest', {
       font: 'Ghost',
@@ -238,5 +241,4 @@ export async function cli(args) {
   options = await promptForScannerAPI(options);
 
   solveTasks(options);
-  // options = await promptForMissingOptions(options);
 }

@@ -14,6 +14,7 @@ export async function createSmktestDir(options) {
 
 export async function createContextFolder(options) {
   // Create directory
+
   var dir =
     options.projectDir +
     '/' +
@@ -100,7 +101,10 @@ export const configSmktest = (options, next) => {
       // Create JSON file:
       options = data.options;
       let optList = data.optList;
-      options = createConfigFile(options, optList);
+      createConfigFile(options, optList);
+    })
+    .then(() => {
+      createContextFolder(options);
     })
     .catch(next);
 };

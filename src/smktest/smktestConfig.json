@@ -1,19 +1,47 @@
 {
-    "asdasd": {
+    "dev": {
         "skipPrompts": false,
         "context": "localhost",
         "scannerApiMethod": "Swagger/OpenApi",
-        "curlLogin": "asd",
+        "curlLogin": "curl -X POST \"https://edutelling-api-develop.openshift.techgap.it/api/v1/auth/authentication\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"{ \\\"email\\\": \\\"formazione@edutelling.it\\\", \\\"password\\\": \\\"Passw0rd\\\", \\\"stayLogged\\\": false }\"",
         "scannerApi": false,
         "autoDetect": false,
         "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
         "smktestFolder": "smktest",
         "environmentVariable": "NODE_ENV",
-        "environment": "asdasd",
+        "environment": "dev",
+        "swaggerUrl": "https://petstore.swagger.io/v2/swagger.json",
+        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
+    },
+    "tet": {
+        "skipPrompts": false,
+        "context": "localhost",
+        "scannerApiMethod": "Swagger/OpenApi",
+        "curlLogin": "adasd",
+        "scannerApi": false,
+        "autoDetect": false,
+        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
+        "smktestFolder": "smktest",
+        "environmentVariable": "NODE_ENV",
+        "environment": "tet",
         "swaggerUrl": "asdasd",
         "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
     },
-    "production": {
+    "test": {
+        "skipPrompts": false,
+        "context": "localhost",
+        "scannerApiMethod": "Swagger/OpenApi",
+        "curlLogin": "dsasdsa",
+        "scannerApi": false,
+        "autoDetect": false,
+        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
+        "smktestFolder": "smktest",
+        "environmentVariable": "NODE_ENV",
+        "environment": "test",
+        "swaggerUrl": "asdasd",
+        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
+    },
+    "staging": {
         "skipPrompts": false,
         "context": "localhost",
         "scannerApiMethod": "Swagger/OpenApi",
@@ -23,25 +51,25 @@
         "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
         "smktestFolder": "smktest",
         "environmentVariable": "NODE_ENV",
-        "environment": "production",
+        "environment": "staging",
         "swaggerUrl": "https://petstore.swagger.io/v2/swagger.json",
         "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
     },
-    "develop": {
+    "bravo": {
         "skipPrompts": false,
-        "context": "specific host",
+        "context": "localhost",
         "scannerApiMethod": "Swagger/OpenApi",
-        "curlLogin": "wewew",
+        "curlLogin": "asdasd",
         "scannerApi": false,
         "autoDetect": false,
         "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
         "smktestFolder": "smktest",
         "environmentVariable": "NODE_ENV",
-        "environment": "develop",
-        "swaggerUrl": "www.testwww",
+        "environment": "bravo",
+        "swaggerUrl": "dasda",
         "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
     },
-    "devolopNo": {
+    "dev2020": {
         "skipPrompts": false,
         "context": "localhost",
         "scannerApiMethod": "Swagger/OpenApi",
@@ -51,64 +79,8 @@
         "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
         "smktestFolder": "smktest",
         "environmentVariable": "NODE_ENV",
-        "environment": "devolopNo",
-        "swaggerUrl": "https://petstore.swagger.io/v2/swagger.json",
-        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
-    },
-    "asd": {
-        "skipPrompts": false,
-        "context": "localhost",
-        "scannerApiMethod": "Swagger/OpenApi",
-        "curlLogin": "asd",
-        "scannerApi": false,
-        "autoDetect": false,
-        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
-        "smktestFolder": "smktest",
-        "environmentVariable": "asd",
-        "environment": "asd",
-        "swaggerUrl": "asd",
-        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
-    },
-    "sdasdas": {
-        "skipPrompts": false,
-        "context": "localhost",
-        "scannerApiMethod": "Swagger/OpenApi",
-        "curlLogin": "asd",
-        "scannerApi": false,
-        "autoDetect": false,
-        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
-        "smktestFolder": "smktest",
-        "environmentVariable": "NODE_ENV",
-        "environment": "sdasdas",
-        "swaggerUrl": "asd",
-        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
-    },
-    "localhost": {
-        "skipPrompts": false,
-        "context": "localhost",
-        "scannerApiMethod": "Swagger/OpenApi",
-        "curlLogin": "",
-        "scannerApi": false,
-        "autoDetect": false,
-        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
-        "smktestFolder": "smktest",
-        "environmentVariable": "",
-        "environment": "",
-        "swaggerUrl": "",
-        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
-    },
-    "asdasdas": {
-        "skipPrompts": false,
-        "context": "localhost",
-        "scannerApiMethod": "Swagger/OpenApi",
-        "curlLogin": "asdasdasd",
-        "scannerApi": false,
-        "autoDetect": false,
-        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
-        "smktestFolder": "smktest",
-        "environmentVariable": "NODE_ENV",
-        "environment": "asdasdas",
-        "swaggerUrl": "sdadsd",
+        "environment": "dev2020",
+        "swaggerUrl": "https://petstore.swagger.io/v2/store/i",
         "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
     }
 }

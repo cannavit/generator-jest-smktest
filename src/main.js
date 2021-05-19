@@ -5,7 +5,7 @@ import path from 'path';
 import { promisify } from 'util';
 import Listr from 'listr';
 import { configSmktest } from './services/createConfigFile';
-
+import { generateCasesSwagger } from './services/smktestSwagger';
 const access = promisify(fs.access);
 const copy = promisify(ncp);
 
@@ -47,6 +47,10 @@ export async function solveTasks(options) {
     {
       title: 'Create ConfigFile',
       task: () => configSmktest(options),
+    },
+    {
+      title: 'Generate SmokeTest Swagger (Basic)',
+      task: () => generateCasesSwagger(options),
     },
   ]);
 
