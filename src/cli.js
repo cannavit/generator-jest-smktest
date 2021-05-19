@@ -1,7 +1,7 @@
 import arg from 'arg';
 import inquirer from 'inquirer';
-import { createProject, configSmktest } from './main';
-
+import { createProject, solveTasks } from './main';
+import figlet from 'figlet';
 // https://www.twilio.com/blog/how-to-build-a-cli-with-node-js
 
 function parseArgumentsIntoOptions(rawArgs) {
@@ -218,6 +218,17 @@ async function promptForScannerAPI(options) {
 }
 
 export async function cli(args) {
+  //! Presentation text:
+  console.log(
+    figlet.textSync('smkTest', {
+      font: 'Ghost',
+      horizontalLayout: 'default',
+      verticalLayout: 'default',
+      width: 80,
+      whitespaceBreak: true,
+    })
+  );
+
   let options = parseArgumentsIntoOptions(args);
 
   options.projectDir = __dirname; // SmokeTest route
@@ -226,7 +237,6 @@ export async function cli(args) {
   options = await promptForContext(options);
   options = await promptForScannerAPI(options);
 
-  configSmktest(options);
+  solveTasks(options);
   // options = await promptForMissingOptions(options);
-  // await createProject(options);
 }

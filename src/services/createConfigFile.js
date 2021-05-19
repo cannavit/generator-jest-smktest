@@ -1,47 +1,7 @@
-let chalk,fs,ncp,path,promisify;_342‍.x([["createProject",()=>createProject],["createSmktestDir",()=>createSmktestDir],["createContextFolder",()=>createContextFolder],["createConfigFile",()=>createConfigFile],["loadOldJsonFiles",()=>loadOldJsonFiles],["pushJsonFile",()=>pushJsonFile],["configSmktest",()=>configSmktest]]);_342‍.w("chalk",[["default",["chalk"],function(v){chalk=v}]]);_342‍.w("fs",[["default",["fs"],function(v){fs=v}]]);_342‍.w("ncp",[["default",["ncp"],function(v){ncp=v}]]);_342‍.w("path",[["default",["path"],function(v){path=v}]]);_342‍.w("util",[["promisify",["promisify"],function(v){promisify=v}]]);
-
-
-
-
-
-const access = promisify(fs.access);
-const copy = promisify(ncp);
-
-async function copyTemplateFiles(options) {
-  return copy(options.templateDirectory, options.targetDirectory, {
-    clobber: false,
-  });
-}
-
-       async function createProject(options) {
-  options = {
-    ...options,
-    targetDirectory: options.targetDirector || process.cwd,
-  };
-
-  const currentFileUrl = _342‍._.meta.url;
-  const templateDir = path.resolve(
-    new URL(currentFileUrl).pathname,
-    '../../templates',
-    options.template.toLowerCase()
-  );
-  options.templateDirectory = templateDir;
-
-  try {
-    await access(templateDir, fs.constants.R_OK);
-  } catch (err) {
-    _342‍.g.console.log('%s Invalid template name', chalk.red.bold('ERROR'));
-  }
-
-  await copyTemplateFiles(options);
-
-  _342‍.g.console.log(' %s Project ready', chalk.green.bold('DONE'));
-
-  return true;
-}
+import fs from 'fs';
 
 //! Create directory:
-       async function createSmktestDir(options) {
+export async function createSmktestDir(options) {
   // Create directory
   var dir = options.projectDir + '/' + options.smktestFolder;
   options.smkDirectory = dir;
@@ -52,7 +12,7 @@ async function copyTemplateFiles(options) {
   return options;
 }
 
-       async function createContextFolder(options) {
+export async function createContextFolder(options) {
   // Create directory
   var dir =
     options.projectDir +
@@ -67,7 +27,7 @@ async function copyTemplateFiles(options) {
   return options;
 }
 
-       function createConfigFile(options, optList) {
+export function createConfigFile(options, optList) {
   if (optList) {
     var json = JSON.stringify(optList, null, 4);
     fs.writeFileSync(
@@ -81,7 +41,7 @@ async function copyTemplateFiles(options) {
 
 // Load fine with olds configurations
 
-       function loadOldJsonFiles(options) {
+export function loadOldJsonFiles(options) {
   //? Check if exist the file.
   let fileJson = options.smkDirectory + '/smktestConfig.json';
   let fileJsonData;
@@ -98,7 +58,7 @@ async function copyTemplateFiles(options) {
   return options;
 }
 
-       function pushJsonFile(options) {
+export function pushJsonFile(options) {
   let optionsList = {};
 
   let optionsSave = options;
@@ -116,7 +76,7 @@ async function copyTemplateFiles(options) {
   return { options: optionsSave, optList: optionsList };
 }
 
-       const configSmktest = (options, next) => {
+export const configSmktest = (options, next) => {
   return createSmktestDir(options)
     .then(() => {
       // Delete old files
@@ -141,10 +101,6 @@ async function copyTemplateFiles(options) {
       options = data.options;
       let optList = data.optList;
       options = createConfigFile(options, optList);
-    })
-    .then(() => {
-      // Create context folder:
-      // createContextFolder(options);
     })
     .catch(next);
 };
