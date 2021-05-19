@@ -1,8 +1,14 @@
 {
-  "name": "generator-jest-smktest",
+  "name": "create-smktest",
   "version": "0.0.0",
   "description": "Smoketest suites gerentator in jest format",
-  "main": "index.js",
+  "main": "src/index.js",
+  "bin": {
+    "create-smktest": "bin/create-smktest"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "jest"
   },
@@ -23,5 +29,19 @@
     "nodejs"
   ],
   "author": "Cannavit",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "chalk": "^4.1.1",
+    "esm": "^3.2.25",
+    "execa": "^5.0.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "linebyline": "^1.3.0",
+    "link": "^0.1.5",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0",
+    "readline": "^1.3.0"
+  }
 }
