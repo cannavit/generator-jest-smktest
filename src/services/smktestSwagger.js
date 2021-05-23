@@ -2,6 +2,7 @@
 
 import inquirer from 'inquirer';
 import fs from 'fs';
+//TODO Connect library and update that library
 const swaggerSmktest = require('../../externalLibraryNPM/swagger-smktest/index');
 
 //TODO Using this if not is added the loging URL
