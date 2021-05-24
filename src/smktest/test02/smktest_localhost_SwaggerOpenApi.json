@@ -24,7 +24,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "[\"SUPERADMIN\",\"TEST\",\"ADMINISTRATOR\",\"AMBASSADOR_MANAGER\",\"COMPANY_MANAGER\",\"COURSE_MANAGER\",\"STUDENT_MANAGER\",\"TEACHER_MANAGER\",\"TUTOR_MANAGER\",\"AMBASSADOR\",\"COMPANY\",\"STUDENT\",\"TEACHER\",\"TUTOR\"]",
-        "testStatus": "apply"
+        "testStatus": "ignore"
     },
     {
         "type": "swaggerSmkTest",
@@ -33,7 +33,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"list\":[{\"ambassador\":{\"youtube\":\"https://andrea.cracco.youtube.it\",\"firstname\":\"Andrea\",\"website\":\"http://www.andreacracco.eu\",\"ambassadorId\":\"#19:0\",\"facebook\":\"https://andrea.cracco.facebook.it\",\"",
-        "testStatus": "apply"
+        "testStatus": "quarantine"
     },
     {
         "type": "swaggerSmkTest",
@@ -42,7 +42,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"account\":{\"accountId\":\"#12:0\",\"notifyBrowser\":null,\"browserLanguage\":\"it\",\"entityType\":\"Institution\",\"roles\":[\"ADMINISTRATOR\"],\"entityId\":\"#13:0\",\"state\":\"ACTIVE\",\"notifyEmail\":null,\"email\":\"formazi",
-        "testStatus": "apply"
+        "testStatus": "quarantine"
     },
     {
         "type": "swaggerSmkTest",
@@ -69,7 +69,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"list\":[{\"course\":{\"provideStage\":true,\"totalHours\":70,\"city\":\"Milano\",\"nation\":\"\",\"description\":\"odori e aromi sono sempre stati elementi distintivi delle cucine locali e internazionali. conoscerli ",
-        "testStatus": "apply"
+        "testStatus": "quarantine"
     },
     {
         "type": "swaggerSmkTest",
@@ -96,7 +96,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"list\":[{\"course\":{\"totalHours\":0,\"city\":\"MILANO\",\"nation\":\"\",\"description\":\"Il percorso formativo Mobile Application Developer: dallo sviluppo di programmi per il web alla realizzazione di applicazi",
-        "testStatus": "apply"
+        "testStatus": "ignore"
     },
     {
         "type": "swaggerSmkTest",
@@ -105,7 +105,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"list\":[{\"course\":{\"provideStage\":true,\"totalHours\":285,\"city\":\"Milano\",\"nation\":\"\",\"description\":\"Tutte le realtà professionali, indipendentemente dalla loro grandezza e dal mercato di riferimento, ",
-        "testStatus": "apply"
+        "testStatus": "ignore"
     },
     {
         "type": "swaggerSmkTest",
@@ -114,7 +114,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "[{\"course\":{\"name\":\"Essenze in cucina\",\"courseId\":\"#15:0\"},\"attendingStudents\":4},{\"course\":{\"name\":\"Master Cake Design\",\"courseId\":\"#15:1\"},\"attendingStudents\":2},{\"course\":{\"name\":\"Master Digital Ma",
-        "testStatus": "apply"
+        "testStatus": "quarantine"
     },
     {
         "type": "swaggerSmkTest",
@@ -123,7 +123,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"list\":[{\"course\":{\"totalHours\":40,\"city\":\"Tucson\",\"nation\":\"\",\"description\":\"The “Farmers, Ranchers & Gatherers of the Southwest,” (FRGSW) project aims to support and elevate the work of regional fo",
-        "testStatus": "apply"
+        "testStatus": "quarantine"
     },
     {
         "type": "swaggerSmkTest",
@@ -132,7 +132,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"list\":[{\"cv\":{\"cvId\":\"#23:0\",\"firstname\":\"bruno\",\"birthdate\":\"1996-05-08\",\"bio\":\"\",\"nativeLanguage\":null,\"professionalRole\":\"Programmatore Java\",\"personalInterests\":\"\",\"qualifications\":[{\"endDate\":\"",
-        "testStatus": "apply"
+        "testStatus": "quarantine"
     },
     {
         "type": "swaggerSmkTest",
@@ -212,7 +212,7 @@
         "apiTest": "https://edutelling-api-develop.openshift.techgap.it/api/v1/edition/available/days-before-expiration",
         "assertStatusCode": 200,
         "passTrainingTest": "true",
-        "trainingResponse": "{\"result\":210}",
+        "trainingResponse": "{\"result\":209}",
         "testStatus": "apply"
     },
     {

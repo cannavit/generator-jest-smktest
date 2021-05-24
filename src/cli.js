@@ -125,6 +125,13 @@ async function promptForContext(options) {
   }
 
   const questions = [];
+
+  questions.push({
+    type: 'input',
+    name: 'projectName',
+    message: 'Add your projectName:',
+  });
+
   if (!options.environmentVariable) {
     questions.push({
       type: 'input',

@@ -1,19 +1,5 @@
 {
-    "stagiging": {
-        "skipPrompts": false,
-        "context": "localhost",
-        "scannerApiMethod": "Swagger/OpenApi",
-        "curlLogin": "curl -X POST \"https://edutelling-api-develop.openshift.techgap.it/api/v1/auth/authentication\" -H \"accept: application/json\" -H \"Content-Type: application/json\" -d \"{ \\\"email\\\": \\\"formazione@edutelling.it\\\", \\\"password\\\": \\\"Passw0rd\\\", \\\"stayLogged\\\": false }\"",
-        "scannerApi": false,
-        "autoDetect": false,
-        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
-        "smktestFolder": "smktest",
-        "environmentVariable": "NODE_ENV",
-        "environment": "stagiging",
-        "swaggerUrl": "https://edutelling-api-develop.openshift.techgap.it/api/v1/api-docs/",
-        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
-    },
-    "develop2": {
+    "develop": {
         "skipPrompts": false,
         "context": "localhost",
         "scannerApiMethod": "Swagger/OpenApi",
@@ -23,11 +9,25 @@
         "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
         "smktestFolder": "smktest",
         "environmentVariable": "NODE_ENV",
-        "environment": "develop2",
+        "environment": "develop",
+        "swaggerUrl": "",
+        "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
+    },
+    "test": {
+        "skipPrompts": false,
+        "context": "localhost",
+        "scannerApiMethod": "Swagger/OpenApi",
+        "curlLogin": "",
+        "scannerApi": false,
+        "autoDetect": false,
+        "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
+        "smktestFolder": "smktest",
+        "environmentVariable": "NODE_ENV",
+        "environment": "test",
         "swaggerUrl": "https://edutelling-api-develop.openshift.techgap.it/api/v1/api-docs/",
         "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
     },
-    "develop3": {
+    "test02": {
         "skipPrompts": false,
         "context": "localhost",
         "scannerApiMethod": "Swagger/OpenApi",
@@ -37,7 +37,7 @@
         "projectDir": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src",
         "smktestFolder": "smktest",
         "environmentVariable": "NODE_ENV",
-        "environment": "develop3",
+        "environment": "test02",
         "swaggerUrl": "https://edutelling-api-develop.openshift.techgap.it/api/v1/api-docs/",
         "smkDirectory": "/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest"
     }
