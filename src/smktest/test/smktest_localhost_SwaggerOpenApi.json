@@ -6,6 +6,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -15,6 +16,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -24,7 +26,8 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
-        "testStatus": "apply"
+        "trainingHeaders": "",
+        "testStatus": "ignore"
     },
     {
         "type": "swaggerSmkTest",
@@ -33,7 +36,8 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
-        "testStatus": "apply"
+        "trainingHeaders": "",
+        "testStatus": "quarantine"
     },
     {
         "type": "swaggerSmkTest",
@@ -42,6 +46,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -51,6 +56,7 @@
         "assertStatusCode": 404,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -60,6 +66,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -69,6 +76,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -78,6 +86,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -87,6 +96,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -96,6 +106,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -105,6 +116,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -114,6 +126,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -123,6 +136,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -132,6 +146,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -141,6 +156,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -150,6 +166,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -159,6 +176,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -168,6 +186,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -177,6 +196,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -186,6 +206,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -195,6 +216,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -204,6 +226,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -213,6 +236,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -222,6 +246,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -231,6 +256,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -240,6 +266,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -249,6 +276,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -258,6 +286,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"institution\":{\"youtube\":\"https://www.youtube.com/channel/UCoF3rkd5AKBfBfpPEFeUFGw\",\"color\":\"196, 19, 41\",\"city\":\"Bergamo\",\"idPEC\":\"\",\"nation\":\"\",\"businessName\":\"Formazione srl\",\"description\":\"L’Azie",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -267,6 +296,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -276,6 +306,7 @@
         "assertStatusCode": 500,
         "passTrainingTest": "false",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -285,6 +316,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"list\":[{\"course\":{\"name\":\"Essenze in cucina\",\"description\":\"odori e aromi sono sempre stati elementi distintivi delle cucine locali e internazionali. conoscerli e utilizzarli al meglio significa val",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -294,6 +326,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -303,6 +336,7 @@
         "assertStatusCode": 400,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -312,6 +346,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -321,6 +356,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -330,6 +366,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -339,6 +376,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -348,6 +386,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -357,6 +396,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -366,6 +406,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -375,6 +416,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -384,6 +426,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -393,6 +436,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -402,6 +446,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -411,6 +456,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -420,6 +466,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -429,6 +476,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -438,6 +486,7 @@
         "assertStatusCode": 401,
         "passTrainingTest": "true",
         "trainingResponse": "",
+        "trainingHeaders": "",
         "testStatus": "apply"
     },
     {
@@ -447,6 +496,7 @@
         "assertStatusCode": 200,
         "passTrainingTest": "true",
         "trainingResponse": "{\"version\":\"v-0.1.12\",\"versionApp\":\"v-0.1.12\",\"description\":\"add cv Language\",\"descriptionApp\":\"add cv multi language\",\"fileName\":\"0305-cvLanguage\",\"updateOn\":\"2021-05-20T09:43:29.471Z\",\"updateOnApp\":",
+        "trainingHeaders": "",
         "testStatus": "apply"
     }
 ]

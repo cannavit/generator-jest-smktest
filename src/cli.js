@@ -170,6 +170,7 @@ async function promptForContext(options) {
 
   return {
     ...options,
+    projectName: options.projectName || 'projectNameUndefined',
     environmentVariable:
       options.environmentVariable || answers.environmentVariable,
     environment: options.environment || answers.environment,
