@@ -250,7 +250,7 @@ export async function cli(args) {
 
   options = {
     skipPrompts: false,
-    context: 'localhost',
+    context: 'docker',
     scannerApiMethod: 'Swagger/OpenApi',
     curlLogin:
       'curl -X POST "https://edutelling-api-develop.openshift.techgap.it/api/v1/auth/authentication" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \\"email\\": \\"formazione@edutelling.it\\", \\"password\\": \\"Passw0rd\\", \\"stayLogged\\": false }"',
