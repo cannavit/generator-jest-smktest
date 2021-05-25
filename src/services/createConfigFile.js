@@ -3,12 +3,28 @@ import fs from 'fs';
 //! Create directory:
 export async function createSmktestDir(options) {
   // Create directory
-  var dir = options.projectDir + '/' + options.smktestFolder;
+  let dir = options.projectDir + '/' + options.smktestFolder;
+
   options.smkDirectory = dir;
 
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
   }
+
+  dir =
+    options.projectDir +
+    '/' +
+    options.smktestFolder +
+    '/' +
+    options.projectName;
+
+  options.smkDirectory = dir;
+
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+  options.smkDirectory = dir;
+
   return options;
 }
 
@@ -19,6 +35,8 @@ export async function createContextFolder(options) {
     options.projectDir +
     '/' +
     options.smktestFolder +
+    '/' +
+    options.projectName +
     '/' +
     options.environment;
 

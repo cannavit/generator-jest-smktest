@@ -118,6 +118,7 @@ export const generateCasesSwagger = async (options, next) => {
     .then((options) => {
       // Build format JSON
       let testList = [];
+
       for (const key in options.answers['Swagger SmokeTest']) {
         const element = options.trainingSwagger[key];
         const answ = options.answers['Swagger SmokeTest'][key] || 'apply';
@@ -130,13 +131,8 @@ export const generateCasesSwagger = async (options, next) => {
     })
     .then((options) => {
       //! Create folder if not exit
-      let pathFolderTest =
-        options.projectDir +
-        '/' +
-        options.smktestFolder +
-        '/' +
-        options.environment;
 
+      let pathFolderTest = options.smkDirectory + '/' + options.environment;
       if (!fs.existsSync(pathFolderTest)) {
         fs.mkdirSync(pathFolderTest);
       }

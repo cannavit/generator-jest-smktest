@@ -19,6 +19,7 @@ function parseArgumentsIntoOptions(rawArgs) {
       '--scannerApiMethod': Boolean,
       '--swaggerUrl': String,
       '--curlLogin': String,
+      '--project-name': String,
       // '--apiTestLevel': Number,
       '-c': '--criterial',
       '-c': '--context',
@@ -170,7 +171,7 @@ async function promptForContext(options) {
 
   return {
     ...options,
-    projectName: options.projectName || 'projectNameUndefined',
+    projectName: options.projectName || answers.projectName,
     environmentVariable:
       options.environmentVariable || answers.environmentVariable,
     environment: options.environment || answers.environment,
@@ -225,6 +226,8 @@ async function promptForScannerAPI(options) {
   };
 }
 
+import promptDocker from './services/dockerService';
+
 export async function cli(args) {
   //! Presentation text:
 
@@ -243,8 +246,30 @@ export async function cli(args) {
   options.projectDir = __dirname; // SmokeTest route
   options.smktestFolder = 'smktest'; // SmokeTet base directory
 
-  options = await promptForContext(options);
-  options = await promptForScannerAPI(options);
+  // options = await promptForContext(options);
 
-  runMultiTasks(options);
+  options = {
+    skipPrompts: false,
+    context: 'localhost',
+    scannerApiMethod: 'Swagger/OpenApi',
+    curlLogin:
+      'curl -X POST "https://edutelling-api-develop.openshift.techgap.it/api/v1/auth/authentication" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \\"email\\": \\"formazione@edutelling.it\\", \\"password\\": \\"Passw0rd\\", \\"stayLogged\\": false }"',
+    scannerApi: false,
+    autoDetect: false,
+    projectDir:
+      '/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src',
+    smktestFolder: 'smktest',
+    projectName: 'edutelling03',
+    environmentVariable: 'NODE_ENB',
+    environment: 'test',
+    swaggerUrl:
+      'https://edutelling-api-develop.openshift.techgap.it/api/v1/api-docs/',
+    smkDirectory:
+      '/Users/ceciliocannavaciuolo/Documents/workspace/phd/generator-jest-smktest/src/smktest/edutelling03',
+  };
+
+  options = await promptDocker(options);
+  // options = await promptForScannerAPI(options);
+
+  // runMultiTasks(options);
 }
