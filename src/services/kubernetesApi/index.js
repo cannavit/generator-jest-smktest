@@ -21,14 +21,6 @@ async function collectConfigKube(options) {
   return options;
 }
 
-async function test(options) {
-  options = await collectConfigKube(options);
-
-  return options;
-}
-
-test();
-
 module.exports.collectConfigKube = collectConfigKube;
 module.exports.getPods = getPods;
 module.exports.getLogs = getLogs;
