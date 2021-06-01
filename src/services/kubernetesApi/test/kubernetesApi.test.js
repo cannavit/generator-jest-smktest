@@ -90,7 +90,6 @@ test('Kubernetes smokeTest check if can read LOGS', async () => {
     logData = log;
 
     if (logData.name) {
-      console.log('@1Marker-No:_-1038767418');
       existPod = true;
     }
   }

@@ -1,0 +1,35 @@
+var ping = require('ping');
+
+module.exports.pingSmktest = async function (options) {
+  let pingTest = options.testConfig;
+  let pingIsAlive = [];
+  for (const key in pingTest) {
+    let element = pingTest[key];
+    let host = element.url;
+    let msg;
+
+    msg = await ping.promise.probe(host);
+
+    pingIsAlive.push({
+      isAlive: msg.alive,
+      url: element.url,
+      name: element.name,
+      output: msg.output,
+      time: msg.time,
+    });
+  }
+
+  options.pingIsAlive = pingIsAlive;
+
+  return options;
+};
+
+// async function test() {
+//   //! Test:
+
+//   console.log('@1Marker-No:_354467327');
+//   await pingSmktest(options);
+//   return options;
+// }
+
+// test();
