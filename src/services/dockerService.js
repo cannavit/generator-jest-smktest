@@ -179,6 +179,7 @@ async function dockerCurlTrain(options) {
     return options;
   }
 }
+
 export default async function promptDocker(options) {
   await dockerOptions(options);
 

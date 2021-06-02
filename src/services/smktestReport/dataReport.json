@@ -1,0 +1,19 @@
+{
+    "config": {
+        "context": "Docker",
+        "environment": "develop",
+        "environmentVariable": "NODE_ENV",
+        "criterial": "ServiceUp",
+        "testType": "Smoke Test"
+    },
+    "smktest":{
+        "results":{
+            "ping": {
+                "name": "test",
+                "curl": "https://www.google.com",
+                "isActive": true,
+                "passTest": true
+            }
+        }
+    }
+}
