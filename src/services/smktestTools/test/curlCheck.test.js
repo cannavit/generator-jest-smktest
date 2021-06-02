@@ -5,19 +5,23 @@ const { curlGet } = require('../src/curlCheck');
 test('Test function: curlCheck ', async () => {
   //! Is possible use /api-docs
 
-  let options = {
-    testCurl: [
-      {
-        curl: 'https://www.google.com/',
-        passTest: true,
-        name: 'test',
+  options = {
+    smktest: {
+      tests: {
+        curl: [
+          {
+            curl: 'https://www.google.com/',
+            passTest: true,
+            name: 'test',
+          },
+          {
+            curl: 'www.google22222.com',
+            passTest: true,
+            name: 'test',
+          },
+        ],
       },
-      {
-        curl: 'www.google22222.com',
-        passTest: true,
-        name: 'test',
-      },
-    ],
+    },
   };
 
   options = await curlGet(options); // Check Curl

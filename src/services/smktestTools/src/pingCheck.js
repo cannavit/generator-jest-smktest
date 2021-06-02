@@ -1,7 +1,7 @@
 var ping = require('ping');
 
 module.exports.pingSmktest = async function (options) {
-  let pingTest = options.testConfig;
+  let pingTest = options.smktest.tests.ping;
   let pingIsAlive = [];
   for (const key in pingTest) {
     let element = pingTest[key];

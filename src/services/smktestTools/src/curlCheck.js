@@ -9,8 +9,10 @@ module.exports.curlGet = async function (options) {
   //
   let curlResponses = [];
 
-  for (const key in options.testCurl) {
-    let element = options.testCurl[key];
+  let testCurl = options.smktest.tests.curl;
+
+  for (const key in testCurl) {
+    let element = testCurl[key];
 
     let portsListContainer = element.curl;
 
