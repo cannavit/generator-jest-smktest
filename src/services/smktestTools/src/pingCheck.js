@@ -23,13 +23,3 @@ module.exports.pingSmktest = async function (options) {
 
   return options;
 };
-
-// async function test() {
-//   //! Test:
-
-//   console.log('@1Marker-No:_354467327');
-//   await pingSmktest(options);
-//   return options;
-// }
-
-// test();
