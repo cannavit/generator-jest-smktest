@@ -8,6 +8,8 @@ import { generateCasesSwagger } from './services/smktestSwagger';
 
 // Kubernetes:
 import { cliKubernetes } from './services/kubernetesApi/cli.js';
+//Single Test.
+import { curlSingleTest } from './services/assertTest/services/curl';
 
 function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
@@ -24,6 +26,7 @@ function parseArgumentsIntoOptions(rawArgs) {
       '--create-config-file': Boolean,
       '--swaggerUrl': String,
       '--curlLogin': String,
+      '--assert-curl': String,
       '--project-name': String,
       '--mode-auto': Boolean,
       '-c': '--criterial',
@@ -44,6 +47,7 @@ function parseArgumentsIntoOptions(rawArgs) {
     context: args['--context'] || undefined,
     createConfigFile: args['--create-config-file'] || false,
     modeAuto: args['--mode-auto'] || false,
+    assertCurl: args['--assert-curl'] || undefined,
     criterial: args._[2],
     scannerApiMethod: args._[3],
     curlLogin: args._[4] || '',
@@ -208,8 +212,15 @@ export async function cli(args) {
 
   //! Run Context test.
   if (options.context === 'kubernetes') {
-    await cliKubernetes(options);
+    // await cliKubernetes(options);
   }
+
+  //! Run Direct Accerts >>>>
+
+  if (options.assertCurl) {
+    await curlSingleTest(options);
+  }
+  //! <<<<
 
   // options = await promptDocker(options);
   // options = await promptForScannerAPI(options);
@@ -217,4 +228,10 @@ export async function cli(args) {
   // runMultiTasks(options);
 }
 
-// create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true
+// create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true --assert-curl="curl www.google.com"
+
+// create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true --assert-curl="curl -X 'GET' 'https://petstore.swagger.io/v2/store/inventory3' -H 'accept: application/json'"
+
+// create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true --assert-curl='curl -X POST "https://edutelling-api-develop.openshift.techgap.it/api/v1/auth/authentication" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"email\": \"formazione@edutelling.it\", \"password\": \"Passw0rd\", \"stayLogged\": false }"'
+
+// create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true --assert-curl='curl -X POST "https://pot-uat.paxitalia.com:8443/api/public/auth/signin" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"password\": \"AdminPOT1111\", \"usernameOrEmail\": \"AdminPOT\"}"'

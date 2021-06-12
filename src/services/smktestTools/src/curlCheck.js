@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const axios = require('axios');
 const curlirize = require('axios-curlirize');
+var shell = require('shelljs');
 
 curlirize(axios);
 
@@ -49,6 +50,23 @@ module.exports.curlGet = async function (options) {
     curlResponses.push(responseData);
   }
   options.curlResponse = curlResponses;
+
+  return options;
+};
+
+module.exports.evalCurl = async function (options) {
+  //
+
+  let response;
+  try {
+    response = await shell.exec(options.assertCurl, {
+      silent: true,
+    });
+  } catch (error) {}
+
+  options.assertResponse = {
+    curl: response,
+  };
 
   return options;
 };
