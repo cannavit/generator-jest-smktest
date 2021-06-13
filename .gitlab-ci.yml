@@ -1,0 +1,20 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - smoketest
+
+
+checklogin:
+  stage: smoketest
+  image:
+    name: smktesting/smoke-master:latest
+    entrypoint: [""]
+  cache: {}
+  script:
+    - ls
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE
+  only:
+    - 06-docker-rancher
