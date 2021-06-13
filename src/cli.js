@@ -235,3 +235,7 @@ export async function cli(args) {
 // create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true --assert-curl='curl -X POST "https://edutelling-api-develop.openshift.techgap.it/api/v1/auth/authentication" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"email\": \"formazione@edutelling.it\", \"password\": \"Passw0rd\", \"stayLogged\": false }"'
 
 // create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true --assert-curl='curl -X POST "https://pot-uat.paxitalia.com:8443/api/public/auth/signin" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"password\": \"AdminPOT1111\", \"usernameOrEmail\": \"AdminPOT\"}"'
+
+// docker run -it --rm --entrypoint sh smktest-master
+
+// docker run -it smktest-master sh -c "create-smktest --project-name=test --environment=develop --context=kubernetes --namespace=NAMESPACE --mode-auto=true --assert-curl="curl www.google.com""

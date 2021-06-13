@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  smktest-master:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smktest-master
+    container_name: smktest-master
+
+networks:
+  host:
